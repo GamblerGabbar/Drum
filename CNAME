@@ -1,8 +1,1 @@
-# Create CNAME file
-echo "drumitloud.io" > CNAME
-echo "www.drumitloud.io" >> CNAME
-
-# Commit and push
-git add CNAME
-git commit -m "Add custom domain configuration"
-git push
+drumitloud.io
