@@ -25,7 +25,7 @@ An interactive web-based drum kit that allows users to play different drum sound
 - `K`: Hi-Hat
 
 ## 📸 Screenshots
-![Drum Kit Interface](screenshot.png)
+![Drum Kit Interface](Screenshot.png)
 
 ## 🚀 Getting Started
 
