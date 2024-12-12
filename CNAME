@@ -1,1 +1,5 @@
-gamblergabbar.drumitloud.io
+# Create CNAME file with precise subdomain configuration
+echo "gamblergabbar.drumitloud.io" > CNAME
+
+# Verify CNAME content
+cat CNAME
