@@ -1,6 +1,7 @@
 #!/bin/bash
 
-DOMAIN="drumitloud.io"
+SUBDOMAIN="gamblergabbar.drumitloud.io"
+MAIN_DOMAIN="drumitloud.io"
 GITHUB_IPS=(
     "185.199.108.153"
     "185.199.109.153"
@@ -8,13 +9,17 @@ GITHUB_IPS=(
     "185.199.111.153"
 )
 
-verify_dns_configuration() {
-    echo "DNS Configuration Check for $DOMAIN"
+verify_subdomain_configuration() {
+    echo "Subdomain DNS Configuration Check for $SUBDOMAIN"
 
-    # Domain Resolution
-    echo "Domain Resolution:"
-    dig $DOMAIN
-    dig www.$DOMAIN
+    # Subdomain Resolution
+    echo "Subdomain Resolution:"
+    dig $SUBDOMAIN
+    dig www.$SUBDOMAIN
+
+    # Main Domain Resolution
+    echo "Main Domain Resolution:"
+    dig $MAIN_DOMAIN
 
     # GitHub Pages IP Connectivity
     echo "GitHub Pages IP Connectivity:"
@@ -25,10 +30,6 @@ verify_dns_configuration() {
             echo "Cannot connect to IP: $ip ❌"
         fi
     done
-
-    # SSL Certificate Check
-    echo "SSL Certificate Status:"
-    openssl s_client -connect $DOMAIN:443 </dev/null 2>/dev/null | openssl x509 -noout -dates
 }
 
-verify_dns_configuration
+verify_subdomain_configuration
