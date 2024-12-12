@@ -1,6 +1,1 @@
-# Create CNAME file with precise configuration
-echo "drumitloud.io" > CNAME
-echo "www.drumitloud.io" >> CNAME
-
-# Verify CNAME content
-cat CNAME
+gamblergabbar.drumitloud.io
