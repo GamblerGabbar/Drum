@@ -47,6 +47,11 @@ h1 {
     padding-top: 80px; /* Adjust based on navbar height */
 }
 
+.pressed {
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+    opacity: 0.5;
+}
+
 .w, .a, .s, .d, .j, .k, .l {
     background-size: cover;
     background-position: center;
