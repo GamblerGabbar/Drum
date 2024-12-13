@@ -44,7 +44,7 @@ function makeSound(key){
             break;
     
             default:
-                alert("button");
+                alert(button);
                 break;
     
     }
