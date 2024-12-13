@@ -6,12 +6,13 @@ document.querySelectorAll(".Drum")[i].addEventListener("click",handle);
 function handle() {
     var button = this.innerHTML;
     makeSound(button);
+    buttonA(button); 
 }  
 }
 
 document.addEventListener("keypress",function(event){
     makeSound(event.key) ; 
-    
+    buttonA(event.key)
 })
 
 function makeSound(key){
@@ -49,4 +50,14 @@ function makeSound(key){
     
     }
 
+}
+
+function buttonA(currentKey){
+    var activeButton = document.querySelector("." + currentKey);
+
+    activeButton.classList.add("pressed");
+
+    setTimeout(function() {
+        activeButton.classList.remove("pressed");
+    },100);
 }
