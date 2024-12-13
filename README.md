@@ -37,6 +37,6 @@ An interactive web-based drum kit that allows users to play different drum sound
 1. Clone the repository
 ```bash
 git clone https://github.com/yourusername/drum-kit.git
-
+```
 ## 🌐 Live Website
-https://gamblergabbar.github.io/Drum/
+** [https://gamblergabbar.github.io/Drum/]
